@@ -45,7 +45,7 @@ for line in sys.stdin:
                 title = root.get(key)
                 break
         c.execute("INSERT INTO definitions VALUES (?, ?, ?)",
-                  (id, title, buffer(line)))
+                  (id, title, memoryview(bytes(line,encoding="utf-8"))))
     except ElementTree.ParseError:
         # malformed XML
         sys.stderr.write("invalid XML on line {}\n".format(linenum))
