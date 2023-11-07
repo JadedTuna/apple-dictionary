@@ -1,6 +1,5 @@
 # Apple Dictionary Tools
 Tools for extracting data from Apple dictionary files (used by the Dictionary application).
-**Note:** I have a bit more info in my recent blog post: [Progress on accessing data from Apple Dictionaries](https://jadedtuna.github.io/apple-dictionary/)
 
 # Usage
 General usage would be to first compile the code with `make` and then run
